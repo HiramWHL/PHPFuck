@@ -85,3 +85,5 @@ You can just use it like this: `python3 phpfuck.py "system('id');"`
 - [x] Support characters other than ASCII range.
 - [ ] Don't use deprecated feature. (`create_function` has been DEPRECATED)
 - [x] Web interface. (https://splitline.github.io/PHPFuck/)
+- [ ] Compatible with PHP 8
+  - Maybe string mode only, since the `create_function` has been removed from PHP 8 :(
