@@ -179,11 +179,13 @@ class PHPFuck():
         
         elif eval_mode == 'assert5':  # special support PHP 5
             assert_func = basic_encode('assert')
+            prefix = basic_encode('eval("')
+            postfix = basic_encode('return 1;");')
             preparation = f"""$_={assert_func};"""
             eval_code = f"""
             {preparation}
             $_(
-                {code}
+                {prefix}.{code}.{postfix}
             )
             """
         
