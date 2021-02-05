@@ -63,7 +63,7 @@ optional arguments:
   -O FILE, --output-file FILE
                         write encoded string into some file.
   -P, --plain-string    encode as plain string (without eval it).
-  -E {assert,create_function}, --eval {assert,create_function}
+  -E {assert,assert5,create_function}, --eval {assert,assert5,create_function}
                         choose eval mode. (`assert` mode only support PHP < 7.1)
 ```
 
@@ -84,6 +84,9 @@ You can just use it like this: `python3 phpfuck.py "system('id');"`
   - `assert` mode
     - Only support PHP < 7.1 (=7.0.x).
     - `assert( '(function(){ YOUR_CODE; return 1; })()' );`
+  - `assert5` mode
+    - A mode to support PHP 5.
+    - `$_='assert';$_(YOUR_CODE);`
 
 ## TODO
 - [x] Support characters other than ASCII range.
