@@ -83,10 +83,10 @@ You can just use it like this: `python3 phpfuck.py "system('id');"`
     - `create_function('', YOUR_CODE)();`
   - `assert` mode
     - Only support PHP < 7.1 (=7.0.x).
-    - `assert( '(function(){ YOUR_CODE; return 1; })()' );`
+    - `assert( '(function(){ YOUR_CODE return 1; })()' );`
   - `assert5` mode
     - A mode to support PHP 5.
-    - `$_='assert';$_(YOUR_CODE);`
+    - `$_='assert';$_('eval("YOUR_CODE return 1;")');`
 
 ## TODO
 - [x] Support characters other than ASCII range.
