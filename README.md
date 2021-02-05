@@ -3,7 +3,7 @@ Using only 7 different characters to write and execute php.
 
 Only support PHP 7 perfectly.
 
-PHP 5 can use plain mode with only ASCII characters.If use eval mode,please use `assert5` mode.This mode will use more characters such as `$_=`
+PHP 5 can use plain mode with only ASCII characters.If use eval mode,please use `assert5` mode.This mode will use more characters such as `$_=`.
 
 Can not support PHP8 right now.
 
